@@ -28,7 +28,7 @@ public class UserServiceImp implements UserService {
 
     @Transactional
     @Override
-    public List<User> getSpecUsers(String model, int series) {
-        return userDao.getSpecUsers(model, series);
+    public User getSpecUser(String model, int series) {
+        return userDao.getSpecUser(model, series);
     }
 }

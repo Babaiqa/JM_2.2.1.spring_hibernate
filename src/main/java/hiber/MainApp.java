@@ -18,7 +18,7 @@ public class MainApp {
 
       userService.add(new User("User1", "Lastname1", "user1@mail.ru", "Rio", 1));
       userService.add(new User("User2", "Lastname2", "user2@mail.ru", "Ceed", 2));
-      userService.add(new User("User3", "Lastname3", "user3@mail.ru", "Ceed", 2));
+      userService.add(new User("User3", "Lastname3", "user3@mail.ru", "Sportage", 3));
       userService.add(new User("User4", "Lastname4", "user4@mail.ru", "Optima", 4));
 
       List<User> users = userService.listUsers();
@@ -31,7 +31,7 @@ public class MainApp {
          System.out.println();
 
       }
-      System.out.println(userService.getSpecUsers("Ceed", 2));
+      System.out.println(userService.getSpecUser("Ceed", 2));
 
       context.close();
    }
